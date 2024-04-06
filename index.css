@@ -180,6 +180,7 @@ button:active {
 @media (min-width: 800px) {
   body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
