@@ -1,0 +1,108 @@
+@font-face {
+  font-family: "HankenGrotesk-VariableFont_wght";
+  src: url("./assets/fonts/HankenGrotesk-VariableFont_wght.ttf");
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+:root {
+  /* Primary colors */
+  --light-red: hsl(0, 100%, 67%);
+  --rangey-yellow: hsl(39, 100%, 56%);
+  --Green-teal: hsl(166, 100%, 37%);
+  --Cobalt-blue: hsl(234, 85%, 45%);
+
+  /* Gradients */
+  --light-slate-blue-background: hsla(252, 100%, 67%);
+  --light-royal-blue-background: hsl(241, 81%, 54%);
+
+  --violet-blue-circle: hsla(256, 72%, 46%, 1);
+  --persian-blue-circle: hsla(241, 72%, 46%, 0);
+
+  /* Neutral */
+
+  --white: hsl(0, 0%, 100%);
+  --pale-blue: hsl(221, 100%, 96%);
+  --light-lavender: hsl(241, 100%, 89%);
+  --dark-gray-blue: hsl(224, 30%, 27%);
+}
+html {
+  font-size: 10px;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "HankenGrotesk-VariableFont_wght";
+  font-size: 1.6rem;
+  background-color: var(--pale-blue);
+}
+p {
+  font-size: 1.8rem;
+}
+
+.result {
+  color: var(--light-lavender);
+  /* color: var(--white) */
+}
+
+/* || Classes */
+.result {
+  max-width: 100%;
+  padding: 15px 25px;
+  background-image: linear-gradient(
+    to top,
+    var(--light-royal-blue-background),
+    var(--light-slate-blue-background)
+  );
+  border-radius: 20px;
+  text-align: center;
+  /* border: 1px solid black; */
+}
+.result_percent {
+  /* border: 1px solid black; */
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(
+    to top,
+    var(--persian-blue-circle),
+    var(--violet-blue-circle)
+  );
+  margin: 0 auto;
+}
+.result_percent p {
+  margin: 0;
+}
+.result_number {
+  color: var(--white);
+  font-size: 4rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* || Utility Classes */
+.text-white {
+  color: var(--white);
+}
+.text-large {
+  font-size: 4rem;
+}
+.text-md-thick {
+  font-weight: 500;
+}
+.text-thick {
+  font-weight: 600;
+}
+.text-small {
+    font-size: 1.4rem;
+}
